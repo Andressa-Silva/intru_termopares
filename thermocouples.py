@@ -2,14 +2,6 @@ import matplotlib.pyplot as plt
 from math import pow
 from math import e
 
-def thermocouple_typeB (): 
-    coefficient_B = [ 0.000000000000*pow(10,0), -0.246508183460*pow(10,-3),   0.590404211710*pow(10,-5),
-                     -0.132579316360*pow(10,-8), 0.156682919010*pow(10,-11), -0.169445292400*pow(10,-14),
-                      0.629903470940*pow(10,-14) ]
-
-    return coefficient_B
-       
-
 def points_graphs (coefficient):
     temperature = 0
     aux_soma    = 0
@@ -23,6 +15,13 @@ def points_graphs (coefficient):
         temperature += 1
             
     return points
+
+def thermocouple_typeB (): 
+    coefficient_B = [ 0.000000000000*pow(10,0), -0.246508183460*pow(10,-3),   0.590404211710*pow(10,-5),
+                     -0.132579316360*pow(10,-8), 0.156682919010*pow(10,-11), -0.169445292400*pow(10,-14),
+                      0.629903470940*pow(10,-14) ]
+
+    return coefficient_B
     
 
 def thermocouple_typeE ():
