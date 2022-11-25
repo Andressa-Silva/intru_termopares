@@ -180,9 +180,6 @@ def main():
     plt.ylabel('Thermoelectric Voltage (mV)')
     plt.legend()
     plt.show()
-    #plt.savefig('termocouples.png')
-
-    
-    print('ble')
+    plt.savefig('termocouples.png')
     
 main()
